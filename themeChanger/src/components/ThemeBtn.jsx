@@ -2,10 +2,15 @@ import useTheme from "../contexts/theme";
 
 export default function ThemeBtn() {
     
-    const {themeMode, lightMode, darkMode } = useTheme()
+    const {themeMode, lightTheme, darkTheme } = useTheme()
 
-    const onChnangeBtn = ()=>{
-    checked   
+    const onChnangeBtn = (e)=>{
+        const darkModeStatus = e.currentTarget.checked
+        if(darkModeStatus){
+            darkTheme()
+        } else{
+            lightTheme()
+        }
     }
     return (
         <label className="relative inline-flex items-center cursor-pointer">

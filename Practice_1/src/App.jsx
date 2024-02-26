@@ -46,8 +46,8 @@ function Todo({id}){
    
      <h3>{id}</h3>
      <h1>
-      {todo.title}
-      </h1>
+         {todo.title}
+     </h1>
      <h3>{todo.description}</h3>
     
      
